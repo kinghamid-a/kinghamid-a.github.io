@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            font-size: 2em;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 1em 0;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #1a5276;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+        p{
+            font-weight: bold;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            align-content: center;
+        }
+
+        .project {
+            width: 100%;
+            max-width: 300px; /* Set your preferred max-width */
+            margin: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            padding: 30px;
+
+        }
+        
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        #img-az{
+            width: 100%;
+            padding-top: 60px;
+            
+        }
+        #img-ms{
+            height: 60%;
+        }
+
+        #img-df{
+            height: 40%;
+            width: 100%;
+            padding-top: 30px;
+        }
+        #img-id{
+            height: 40%;
+            width: 100%;
+            padding-top: 30px;
+            padding left: 30px;
+
+        }
+        #img-pv{
+            height: 50%;
+            width: 100%;
+            padding-top: 30px;
+            padding left: 30px;
+
+        }
+        #contact-form {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        #contact-form button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #contact-form button:hover {
+            background-color: #1a5276;
+        }
+
+        #contact-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-icons a {
+            margin: 0 15px;
+            color: #3498db;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        #contact-icons a:hover {
+            color: #1a5276;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Abdulrahman Hamid - Technical Support Engineer
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Technologies</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself and your skills. Highlight your experiences and achievements.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proficient Technologies</h2>
+        <div class="projects">
+            <div class="project">
+                <img id= "img-ms"src="https://play-lh.googleusercontent.com/W3VsSBWwRkgu3VU4vz0AHItfbhGKlYbgqLXJAihtr-QYgMO1A3g9_eyrAbqOxANa7qc" alt="Project 1">
+                <h3>Admin Center</h3>
+                <p>Centralized web portal that allows IT administrators to manage and monitor their organization's Microsoft 365 services.</p>
+            </div>  
+
+            <div class="project">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/496/316/original/microsoft-software-brand-logo-symbol-with-name-design-illustration-free-vector.jpg">
+                <h3>Microsoft Products</h3>
+                <p>Various subscription plans offered by Microsoft that provide access to a range of cloud-based services and applications.</p>
+            </div>  
+            
+             <div class="project">
+                <img id="img-az" src="data:image/jpeg;base64,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" alt="Project 1">
+                <h3>Azure</h3>
+                <p>Comprehensive cloud computing platform that provides a wide array of services and resources for building, deploying, and managing applications.</p>
+            </div>  
+            <!-- Add similar divs for other projects -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects">
+            <div class="project">
+                <img id="img-df" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHHMBSG6iZ9NfVVgA5bzIxNOLTfYMlvWpqRVnXf0H3EQ&s" alt="Project 1">
+                <h3>Microsoft Defender</h3>
+                <p>Comprehensive security solution developed by Microsoft to protect systems and data from various cyber threats, including viruses, malware, and other malicious activities.</p>
+            </div>  
+
+            <div class="project">
+                <img id="img-pv" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Microsoft_Purview_Logo.svg/2048px-Microsoft_Purview_Logo.svg.png" alt="Project 1">
+                <h3>Microsoft Purview</h3>
+                <p>Data governance solution designed to discover, classify, and manage data across an organization. It provides insights into data usage, helps maintain compliance, and facilitates efficient data management.</p>
+            </div>  
+            
+             <div class="project">
+                <img id="img-id" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhrqmuIkecK18Qx6hDftvZ198uH_maBBX7Ifq53vs7A&s" alt="Project 1">
+                <h3>Microsoft Identity</h3>
+                <p>Set of identity and access management services provided by Microsoft. It enables users to securely access various Microsoft and third-party applications with a single set of credentials.</p>
+            </div>  
+            <!-- Add similar divs for other projects -->
+        </div>
+    </section>
+
+     <section id="contact">
+        <h2 id="h2contact">Contact Me</h2>
+        <p>Have a technical question or need support? Feel free to reach out. I'm here to assist you!</p>
+        <p>Email: abdurahman.zeno@gmail.com</p>
+        <p>Phone: (555) 123-4567</p>
+
+        <div id="contact-icons">
+            <a href="https://x.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Abdulrahman. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

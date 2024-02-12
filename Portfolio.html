@@ -24,14 +24,12 @@
             font-size: 2em;
         }
 
-       
-
-        nav {
+          nav {
             background-color: #2980b9;
             padding: 1em 0;
             text-align: center;
             flex-direction: column;
-
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -42,7 +40,7 @@
             font-size: 1.2em;
             transition: background-color 0.3s ease-in-out;
         }
-
+    }
 
         nav a:hover {
             background-color: #1a5276;
@@ -175,16 +173,12 @@
         #aboutmeP{
             padding: 80px;
         }
-        .responsive-div {
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
+        .responsivediv{
+            border-radius: 40px;
+            background-color: #3498db;
+            padding: 60px;
+            color: #fff;;
+
         }
 
         /* Media query for smaller screens (e.g., phones) */
@@ -198,6 +192,22 @@
             object-fit: scale-down;
             height: 80px;
 
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                width: 100%;
+                margin: -15px;
+
+            }
+
+          
+
+    }
+
+        nav a:hover {
+            background-color: #1a5276;
         }
 
         

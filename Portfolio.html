@@ -24,6 +24,8 @@
             font-size: 2em;
         }
 
+       
+
         nav {
             background-color: #2980b9;
             padding: 1em 0;
@@ -40,6 +42,7 @@
             font-size: 1.2em;
             transition: background-color 0.3s ease-in-out;
         }
+
 
         nav a:hover {
             background-color: #1a5276;
@@ -172,15 +175,23 @@
         #aboutmeP{
             padding: 80px;
         }
-
-           @media screen and (max-width: 600px) {
-             #aboutmeDiv{
-            border-radius: 40px;
-            background-color: #3498db;
-            padding: 60px;
-            color: #fff;;
-
+        .responsive-div {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
         }
+
+        /* Media query for smaller screens (e.g., phones) */
+        @media screen and (max-width: 600px) {
+            .responsive-div {
+                width: 90%;
+            }
         }
         
         #headerimg{
@@ -189,7 +200,7 @@
 
         }
 
-        #headpro{
+        
 
 
 
@@ -201,20 +212,22 @@
     <header>
         
         <div id="headpro">Abdulrahman Hamid - Cloud Engineer</div>
-        <div style=""id="headpro" ><img id="headerimg"  src="https://www.freepnglogos.com/uploads/microsoft-window-logo-emblem-0.png"></div>        
+        <div style=""id="headpro" ><img id="headerimg"  src="https://www.freepnglogos.com/uploads/microsoft-window-logo-emblem-0.png"></div>
+
+        
     </header>
 
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">M365</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
          <h2>Who's Abdulrahman?</h2>
          <br/>
 
-         <div id="aboutmeDiv">
+         <div class ="responsive div">
     <p>
         Hello! I'm Abdulrahman Hamid, a dedicated and passionate Technical Support Engineer with extensive expertise in Microsoft technologies. My journey in the realm of IT support has equipped me with the skills and knowledge to provide top-notch assistance in deploying, configuring, and troubleshooting Microsoft products and services.
     </p>
